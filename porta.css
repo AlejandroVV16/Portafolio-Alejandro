@@ -37,7 +37,7 @@ header img{
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     float: left;
-    transform: translateX(200px);
+    transform: translateX(50px);
     margin-bottom: 50px;
     display: block;
 }
