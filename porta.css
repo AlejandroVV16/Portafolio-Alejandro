@@ -1,0 +1,220 @@
+/* porta.css */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #100517;
+    color: #fff;
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    color: #fff;
+    padding: 0; /* Eliminamos el padding general */
+    text-align:center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+header img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    float: left;
+    transform: translateX(200px);
+    margin-bottom: 50px;
+    display: block;
+}
+
+header nav {
+    background-color: #331249;
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px; 
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+header h1 {
+    margin: 40px 0 5px;
+    font-size: 3em;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 15px;
+    
+}
+
+header p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin: 10px 0 20px;
+}
+
+header a {
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 100px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-cv {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 850px;
+    background-color: #391254;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007BFF;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 90%;
+    max-width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Evita que padding y border alteren el ancho */
+}
+
+form textarea {
+    resize: none; /* Evita que el usuario expanda el área de texto */
+    padding: 30px;
+}
+
+form button {
+    width: 90%;
+    max-width: 100%;
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #331249;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 3000px;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #007BFF;
+    transition: width 1s ease-in-out;
+}
+
+/* Ajusta el ancho según el nivel de habilidad */
+.python { width: 80%; }
+.html { width: 40%; }
+.js { width: 30%; }
+.git { width: 70%; }
+.bash { width: 40%; }
